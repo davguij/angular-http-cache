@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { HttpModule, Http, XHRBackend, ConnectionBackend, RequestOptions } from '@angular/http';
 
 import { HttpCacheService } from './http-cache.service';
 
-export function httpServiceFactory() {
-	return new HttpCacheService();
+export function httpCacheService(backend: ConnectionBackend, defaultOptions: RequestOptions) {
+	return new HttpCacheService(backend, defaultOptions);
 }
 
 @NgModule({
-	imports: [CommonModule],
+	imports: [
+		HttpModule
+	],
 	providers: [
-		{ provide: HttpCacheService, useFactory: httpServiceFactory }
-	]
+		{
+			provide: Http,
+			deps: [XHRBackend, RequestOptions],
+			useFactory: httpCacheService
+		}
+	],
 })
 export class HttpCacheModule { }
