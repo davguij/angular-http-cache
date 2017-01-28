@@ -1,0 +1,28 @@
+{
+	"name": "angular-http-cache",
+	"version": "1.0.0",
+	"description": "Speed up your remote requests by automatically caching them on client and add support for offline navigation.",
+	"main": "bundles/angular-http-cache.umd.min.js",
+	"module": "index.js",
+	"typings": "index.d.ts",
+	"keywords": [],
+	"author": {
+		"name": "David Guijarro",
+		"email": "guijarro.dav@gmail.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"homepage": "",
+	"bugs": {
+		"url": ""
+	},
+	"peerDependencies": {
+		"@angular/core": "^2.4.0",
+		"reflect-metadata": "^0.1.8",
+		"rxjs": "^5.0.1",
+		"zone.js": "^0.7.2"
+	}
+}
