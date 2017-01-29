@@ -17,6 +17,9 @@
 			],
 			"rxjs/*": [
 				"node_modules/rxjs/*"
+			],
+			"angular-async-local-storage": [
+				"node_modules/angular-async-local-storage"
 			]
 		},
 		"rootDir": "src",
