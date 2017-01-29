@@ -20,6 +20,9 @@
 			],
 			"angular-async-local-storage": [
 				"node_modules/angular-async-local-storage"
+			],
+			"lodash": [
+				"node_modules/lodash"
 			]
 		},
 		"rootDir": "src",
