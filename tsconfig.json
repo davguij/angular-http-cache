@@ -18,8 +18,8 @@
 			"rxjs/*": [
 				"node_modules/rxjs/*"
 			],
-			"angular-async-local-storage": [
-				"node_modules/angular-async-local-storage"
+			"localforage": [
+				"node_modules/localforage"
 			],
 			"lodash": [
 				"node_modules/lodash"
