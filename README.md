@@ -15,12 +15,15 @@ Regardless of the previous step, the service will perform the HTTP request and w
 ## How to use it?
 
 The module is a replacement for the native `HttpModule`, so it's intended to be easy to be dropped in.
+
+Its methods are identical to the native module.
+
 The code works fine with JSON-formatted HTTP responses. It can be also used for other types of responses, such as images, but __it hasn't been properly tested yet__, so please use with caution.
 
 ### Installing it
 
 ```
-npm install angular-http-cache --save
+npm install ng-http-cache --save
 ```
 
 ### Importing it
@@ -29,7 +32,7 @@ npm install angular-http-cache --save
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { HttpCacheModule } from 'angular-http-cache';
+import { HttpCacheModule } from 'ng-http-cache';
 
 @NgModule({
   imports: [
@@ -49,7 +52,7 @@ export class ExampleComponent implements OnInit {
 
   ngOnInit() {
     this.http.get('http://api.example.com/example')
-	// There's no need to 'map' the response, the service does it for you!
+	  // There's no need to 'map' the response, the service does it for you!
       .subscribe((resp) => { 
         console.log(resp);
       });
