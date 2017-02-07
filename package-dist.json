@@ -1,6 +1,6 @@
 {
 	"name": "ng-http-cache",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "Speed up your remote requests by automatically caching them on client and add support for offline navigation.",
 	"keywords": [
 		"angular 2"

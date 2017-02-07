@@ -69,6 +69,7 @@ Feel free to drop me a line if you have an issue, doubt, problem or suggestion, 
 ### To-do
 1) Check the network status and don't make the request if offline.
 2) Include unit tests.
+3) Add JSONP support.
 
 ### License
 
